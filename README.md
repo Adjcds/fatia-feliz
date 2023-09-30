@@ -1,5 +1,5 @@
 
-# Bem-vindo(a) a Pizzaria: <a href="https://adjcds.github.io/fatia-feliz/pizzaria.html">Fatia Feliz🍕</a>
+# Bem-vindo(a) a Pizzaria: <a href="https://adjcds.github.io/fatia-feliz/fatiaf.html">Fatia Feliz🍕</a>
 
 <img src="assets/site.png">
 Este é o repositório do projeto fictício de uma Pizzaria, um site desenvolvido para exibir o menu e informações básicas da nossa pizzaria. Aqui você encontrará as instruções para executar o projeto localmente ou acessar o site implantado.
