@@ -1,0 +1,406 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+	text-decoration: none;
+	list-style: none;
+	scroll-behavior: smooth;
+	transition: none !important;
+	animation: none !important;
+  }
+  
+  :root {
+	--text-color: #302e29;
+	--main-color: #ff9100;
+	--second-color: #858585;
+	--bg-color: #fffbf6;
+	--big-font: 4.5rem;
+	--h2-font: 2.6rem;
+	--p-font: 1.1rem;
+  }
+  
+  body {
+	background: var(--bg-color);
+	color: var(--text-color);
+  }
+  
+  /*nav*/
+  header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: white;
+	padding: 23px 15%;
+  }
+  
+  header img {
+	height: 80px;
+  }
+  
+  span {
+	color: var(--main-color);
+  }
+  
+  .navbar {
+	display: flex;
+  }
+  
+  .navbar a {
+	color: var(--text-color);
+	font-size: var(--p-font);
+	font-weight: 600;
+	padding: 5px 10px;
+	margin: 2px 25px;
+	border-bottom: 2px solid transparent;
+  }
+  
+  .navbar a:hover {
+	border-bottom: 2px solid var(--main-color);
+	color: var(--main-color);
+  }
+  
+  .h-icons {
+	display: flex;
+	align-items: center;
+	padding: 10px 22px;
+	background: var(--main-color);
+	border-radius: 5rem;
+  }
+  
+  .h-icons i {
+	font-size: 22px;
+	color: var(--bg-color);
+	margin-right: 15px;
+	margin-left: 8px;
+  }
+  
+  #menu-icon {
+	font-size: 32px;
+	color: var(--bg-color);
+	z-index: 10001;
+	cursor: pointer;
+	display: none;
+  }
+  
+  section {
+	padding: 90px 15% 80px;
+  }
+  
+/*inicio*/
+
+  .home {
+	width: 100%;
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 2rem;
+  }
+  
+  .home-img img {
+	width: 100%;
+	height: auto;
+  }
+  
+  .home-text h1 {
+	font-size: var(--big-font);
+	line-height: 1.2;
+	margin-bottom: 2rem;
+  }
+  
+  .home-text p {
+	font-size: var(--p-font);
+	font-weight: 500;
+	color: var(--second-color);
+	line-height: 32px;
+	margin-bottom: 2.3rem;
+  }
+  
+  .btn {
+	display: inline-block;
+	padding: 14px 26px;
+	background: var(--main-color);
+	color: var(--bg-color);
+	font-size: 15px;
+	font-weight: 600;
+	border-radius: 5rem;
+  }
+  
+/* Responsividade para a seção "home" */
+@media screen and (max-width: 1020px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home-text {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+    p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .home-img img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+  
+  /*Cardapio*/
+  .mains {
+	background-color: #ff0000;
+	padding: 50px 50px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .containers {
+	max-width: 1024px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 40px;
+  }
+  
+
+.mains span{
+	color: #000000;
+}
+  .card-produto {
+	background-color: white;
+	flex: 1 1 300px;
+	border-radius: 4px;
+	box-shadow: 1px 1px 10px 1px gray;
+  }
+  
+  .container-imagem img {
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+  }
+  
+  .container-info {
+	padding: 0px 10px;
+	height: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+  }
+  
+  .container-info h3 {
+	font-size: 18px;
+  }
+  
+  .container-preco {
+	padding: 10px;
+	border-top: 1px solid #c9c4c4;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .container-icone {
+	padding: 5px;
+	border: 1px solid #c9c4c4;
+	border-radius: 8px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+  }
+  
+  /* Estilos para quadrados de bebidas */
+  .containerz {
+	max-width: 1024px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 40px;
+  }
+  
+  .card-produto.bebida {
+	background-color: #f3f3f3;
+	color: #000000;
+  }
+  
+  .row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+  }
+  
+  .Pizzas h2 {
+	box-shadow: 0 0 10px rgb(0, 0, 0);
+	background-color: #fced1d;
+	font-size: 50px;
+	line-height: 60px;
+	margin-bottom: 30px;
+	border-radius: 45%;
+  }
+  
+  .bebidas h2 {
+	color: #000000;
+	font-size: 50px;
+	line-height: 60px;
+	margin-bottom: 30px;
+  }
+  
+  .whatsapp-link {
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	bottom: 40px;
+	right: 40px;
+	background-color: #25d366;
+	color: #000000;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 30px;
+	box-shadow: 1px 1px 2px #000000;
+	z-index: 1000;
+  }
+  
+  .fa-whatsapp {
+	margin-top: 16px;
+  }
+  
+  .last-text p {
+	text-align: center;
+	padding: 25px;
+	color: var(--text-color);
+	font-size: 15px;
+	letter-spacing: 1px;
+  }
+  
+  .scroll-top {
+	position: fixed;
+	bottom: 2.2rem;
+	right: 2.2rem;
+  }
+  
+  .scroll-top i {
+	padding: 8px;
+	font-size: 1.4rem;
+	color: #fff;
+	background: var(--main-color);
+	border-radius: 5rem;
+  }
+  
+  @media (max-width: 1690px) {
+	section {
+	  padding: 70px 2%;
+	}
+	header {
+	  padding: 11px 2%;
+	}
+	header.sticky {
+	  padding: 8px 2%;
+	}
+	
+}
+
+
+.whatsapp-link {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fdfdfd;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #000000;
+    z-index: 1000;
+}
+
+.fa-whatsapp {
+    margin-top: 16px;
+}
+
+/* ESTILO DO RODAPÉ */
+
+.container-rodape {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    background-color: #109b04;
+}
+
+.container-ls {
+    width: 100px;
+}
+
+.container-ls img {
+    width: 100%;
+    height: 100%;
+}
+.container-contato {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.container-contato div {
+    padding: 10px 0;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    flex: 1 1 240px;
+    text-align: center;
+  }
+  
+.container-descricao {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+.container-descricao a {
+    width: 40px;
+    height: 40px;
+    background-image: url("./img/seta-para-cima.png");
+    background-position: center;
+    background-size: cover;
+    background-color: #dddddd;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 60px;
+    right: 0px;
+  }
+  
+.container-rodape p{
+    color: #ffffff;
+}
+
+.container-redes-sociais img {
+    width: 30px;
+    margin-right: 5px;
+  }
